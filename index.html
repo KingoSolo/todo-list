@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="w-screen min-h-screen bg-gradient-to-r from-indigo-500 to-indigo-900 p-10 ">
+    <div class="w-full max-w-xl bg-white rounded-md mx-auto mt-24 mb-5 pt-10 px-8 pb-16">
+        <h2 class="flex items-center text-3xl mb-5">To-Do List <img src="images/to-do icon.png" alt="to-do" width="30" height="30"></h2>
+        <div class="flex items-center space-between bg-gray-200 rounded-full pl-5 mb-6">
+            <input type="text" id="input-box" placeholder="Add your text" class="flex-1 border-none bg-transparent p-2 font-normal outline-none">
+            <button onclick="addTask()" class="px-12 py-4 text-md rounded-full bg-red-500 text-white">Add</button>
+        </div>
+        <ul id="list-container" class="text-xl  ">
+         
+        </ul>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
